@@ -6,12 +6,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProductsComponent } from './product/products.component';
 
 const routes: Routes = [
-  { path: '', component: ProductsWrapperComponent ,children:[
-    {path: '',component:ProductListComponent},
-    { path: '/add', component: ProductsComponent },
-    { path: '/edit:id', component: ProductsComponent }
-  ]}
- 
+  
+  {
+    path: '', component: ProductsWrapperComponent, children: [
+      { path: '',  component: ProductListComponent },
+      { path: 'add', component: ProductsComponent },
+      { path: 'edit:id', component: ProductsComponent },
+      { path: '*', redirectTo: "products", pathMatch: 'full' }
+    ]
+  }
+
 ];
 
 @NgModule({
