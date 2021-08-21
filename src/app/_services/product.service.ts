@@ -27,7 +27,7 @@ export class ProductService {
   }
   getById(id: number): Product {
     const product = this.products.filter(x => x.id == id);
-    return ...product;
+    return product[0];
   }
 
   insert(p: Product): boolean {
