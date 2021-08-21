@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ProductsRoutingModule } from './products-routing.module';
-import { ProductsComponent } from './products.component';
+import { ProductsComponent } from './product/products.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 
 @NgModule({
   declarations: [
-    ProductsComponent
+    ProductsComponent,
+    ProductListComponent
   ],
   imports: [
     CommonModule,
