@@ -18,7 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AccordionModule,
     InputTextModule,
     ButtonModule,
-    // DropdownModule,
+    DropdownModule,
     TableModule,
     MessagesModule,
     MessageModule
@@ -29,7 +29,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AccordionModule,
     InputTextModule,
     ButtonModule,
-    //DropdownModule,
+    DropdownModule,
     TableModule,
     MessagesModule,
     MessageModule
