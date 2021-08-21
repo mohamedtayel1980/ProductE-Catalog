@@ -15,10 +15,9 @@ export class ProductsComponent implements OnInit {
   private sub: any;
   types = [
 
-    { name: 'Select', code: '-1' },
+    { name: 'Sellect', code: '-1' },
     { name: 'Basic', code: '0' },
     { name: 'Premium', code: '1' },
-
   ]
   title = 'reactiv-forms';
 

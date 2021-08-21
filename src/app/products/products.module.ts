@@ -7,6 +7,7 @@ import { ProductsRoutingModule } from './products-routing.module';
 import { ProductsComponent } from './product/products.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductsWrapperComponent } from './products-wrapper/products-wrapper.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ProductsWrapperComponent } from './products-wrapper/products-wrapper.co
     CommonModule,
     ProductsRoutingModule,
     SharedModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ]
 })
 export class ProductsModule { }

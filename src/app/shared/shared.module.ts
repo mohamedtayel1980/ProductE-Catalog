@@ -14,7 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [],
   imports: [
     CommonModule,
-    //BrowserAnimationsModule,
+   // BrowserAnimationsModule,
     AccordionModule,
     InputTextModule,
     ButtonModule,
