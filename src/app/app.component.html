@@ -1,17 +1,9 @@
+<div class="p-buttonset" style="margin-bottom: 24px;">
 
-<span class="p-buttonset">
+  <a pButton [routerLink]="['/products']" style="text-decoration: none;margin-right: 24px;">
+    Product list
+  </a>
+</div>
 
-  <a     [routerLink]="['/products']" style="text-decoration: none;">
-     Products
-  </a>
-  
-  
-  <a    [routerLink]="['add']" style="text-decoration: none;">
-    Add Product
-  </a>
-  </span>
-  
-  
-  <router-outlet></router-outlet>
-  
-  
+
+<router-outlet></router-outlet>

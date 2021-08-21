@@ -11,7 +11,7 @@ const routes: Routes = [
     path: '', component: ProductsWrapperComponent, children: [
       { path: '',  component: ProductListComponent },
       { path: 'add', component: ProductsComponent },
-      { path: 'edit:id', component: ProductsComponent },
+      { path: 'edit/:id', component: ProductsComponent },
       { path: '*', redirectTo: "products", pathMatch: 'full' }
     ]
   }

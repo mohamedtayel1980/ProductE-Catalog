@@ -1,3 +1,10 @@
+<div style="display: flex;justify-content:space-between;margin: 10px">
+    <h3>Product list</h3>
+    <a pButton [routerLink]="['add']" style="text-decoration: none;">
+      Add Product
+    </a>
+  </div>
+  
 <p-table [value]="products">
     <ng-template pTemplate="header">
         <tr>

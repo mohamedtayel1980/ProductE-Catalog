@@ -27,7 +27,7 @@ export class ProductsComponent implements OnInit {
   constructor(private fb: FormBuilder, private route: ActivatedRoute, private productService: ProductService) {
 
     this.sub = this.route.params.subscribe(params => {
-      this.id = +params['id']; // (+) converts string 'id' to a number
+      this.id = params['id']; // (+) converts string 'id' to a number
 
       // In a real app: dispatch action to load the details here.
     });
@@ -36,7 +36,7 @@ export class ProductsComponent implements OnInit {
 
 
     if (this.id != null) {
-      var product = this.productService.getById(this.id)
+      var product = this.productService.getById(+this.id)
       this.myForm = this.fb.group({
         name: [product.name, Validators.required],
         amount: [product.amount, Validators.required],
